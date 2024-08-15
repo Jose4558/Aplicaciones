@@ -1,0 +1,19 @@
+<?php
+class Bono14 {
+    public $empleadoID;
+    public $salarioBase;
+    public $mes;
+    public $anio;
+
+    public function __construct($empleadoID, $salarioBase, $mes, $anio) {
+        $this->empleadoID = $empleadoID;
+        $this->salarioBase = $salarioBase;
+        $this->mes = $mes;
+        $this->anio = $anio;
+    }
+
+    public function calcularBono14() {
+        return $this->salarioBase / 12;
+    }
+}
+?>
